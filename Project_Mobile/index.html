@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Double Heart (Mobile)</title>
+
+    <link rel="stylesheet" href="./css/main_m.css">
+    <link rel="stylesheet" href="./css/common_m.css">
+
+    <!-- 웹폰트 : Noto Sans KR -->
+<!--     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+ -->
+    <!-- 웹폰트 : Pretendard -->
+    <!-- <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css" /> -->
+
+    <!-- 메인슬라이드 Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- 폰트어썸 아이콘 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 메인슬라이드 Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>       
+
+    
+
+    <!-- bxslider 관련 cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+
+    <script>
+    window.addEventListener('resize', () => { 
+        if(window.innerWidth > 1024) {
+            location.href = '../Project_PC/index.html';
+        }
+
+    });
+</script>
+
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+    <!-- 헤더 영역 -->
+    <header>
+        <div class="header-top">
+            <!-- 로고(상단) -->
+            <div class="logo">
+                <a href="/">
+                    <img src="./imgs/logo_m.png" alt="로고">
+                </a>
+            </div>
+            <button class="menu-btn" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+
+    <!-- 사이드바 네비게이션 -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <a href="/">
+                    <img src="./imgs/logo_m.png" alt="로고">
+                </a>
+            </div>
+            <button class="close-btn" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <!-- <li><a href="#">홈</a></li> -->
+                <li class="has-submenu">
+                    <a href="#">브랜드스토리</a>
+                    <ul class="submenu">
+                        <li><a href="brand.html">브랜드스토리</a></li>
+                        <li><a href="brand.html">회사소개</a></li>
+                        <li><a href="brand.html">연혁</a></li>
+                        <li><a href="brand.html">비전.목표</a></li>
+                        <li><a href="brand.html">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="#">제품안내</a>
+                    <ul class="submenu">
+                        <li><a href="product.html">젖병.분유병</a></li>
+                        <li><a href="product.html">수유용품</a></li>
+                        <li><a href="product.html">쪽쪽이.구강케어</a></li>
+                        <li><a href="product.html">이유식용품</a></li>
+                        <li><a href="product.html">목욕.위생용품</a></li>
+                        <li><a href="product.html">스킨케어</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="babyinfo.html">육아정보</a>
+                    <ul class="submenu">
+                        <li><a href="babyinfo.html">육아정보</a></li>
+                            <li><a href="babyinfo.html">초보엄빠탈출</a></li>
+                            <li><a href="babyinfo.html">재능놀이탐구</a></li>
+                            <li><a href="babyinfo.html">연령대별 맞춤케어</a></li>
+                            <li><a href="babyinfo.html">베이비페어</a></li>
+                        </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="magazine.html">매거진</a>
+                    <ul class="submenu">
+                        <li><a href="magazine.html">매거진</a></li>
+                        <li><a href="magazine.html">놀이탐구</a></li>
+                        <li><a href="magazine.html">교육정보</a></li>
+                        <li><a href="magazine.html">알뜰육아정보</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="event.html">이벤트</a>
+                    <ul class="submenu">
+                        <li><a href="event.html">이달의이벤트</a></li>
+                        <li><a href="event.html">지난이벤트</a></li>
+                        <li><a href="event.html">당첨자발표</a></li>
+                    </ul>
+                </li>                
+
+                <li class="has-submenu">
+                    <a href="notice.html">공지사항</a>
+                    <ul class="submenu">
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="notice.html">1:1문의</a></li>
+                        <li><a href="notice.html">제휴문의</a></li>
+                        <li><a href="notice.html">상품문의</a></li>
+                    </ul>
+                </li>                
+
+            </ul>
+        </nav>
+
+        <div class="iconmenu">
+            <ul>
+                <li><a href="login.html"><img src="./imgs/log-in.svg" alt="로그인" title="로그인"></a></li>
+                <li><a href="join.html"><img src="./imgs/user.svg" alt="회원가입" title="회원가입"></a></li>
+                <li><a href="cart.html"><img src="./imgs/shopping-cart.svg" alt="장바구니" title="장바구니"></a></li>
+                <li><a href="search.html"><img src="./imgs/search.svg" alt="검색" title="검색"></a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- 오버레이 -->
+    <div class="overlay" id="overlay"></div>
+
+
+
+
+    
+
+
+
+    <!-- 메인 슬라이드 -->
+    <section class="slider mainimg">
+        <div class="slides" id="slides">
+            <div class="slide">
+                <a href=""><img src="./imgs/mainimg_01.png" alt="메인슬라이드1"></a>
+            </div>
+            <div class="slide">
+                <a href=""><img src="./imgs/mainimg_02.png" alt="메인슬라이드2"></a>
+            </div>
+        </div>
+        <div class="slider-controls" id="sliderDots">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <!-- <div class="slider-dot"></div> -->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- start : 막강한 회원전용혜택 -->
+    <h2 class="tit_m">
+        <span>막강한 회원전용혜택</span>
+    </h2>
+    <section class="superprice">
+        <div class="iconarea">
+            <ul>
+                <li class="icon1">
+                    <a href=""><img src="./imgs/icon_superprice_01.svg" alt="신규가입혜택"></a>
+                    <span class="exp">신규가입혜택</span>
+                </li>
+                <li class="icon2">
+                <a href=""><img src="./imgs/icon_superprice_02.svg" alt="포인트 적립"></a>
+                <span class="exp">포인트 적립</span>
+            </li>
+            <li class="icon3">
+                <a href=""><img src="./imgs/icon_superprice_03.svg" alt="이달의 이벤트"></a>
+                <span class="exp">이달의 이벤트</span>
+            </li>
+            <li class="icon4">
+                <a href=""><img src="./imgs/icon_superprice_04.svg" alt="마감 특가전"></a>
+                <span class="exp">마감 특가전</span>
+            </li>
+            <li class="icon5">
+                <a href=""><img src="./imgs/icon_superprice_05.svg" alt="리뷰 이벤트"></a>
+                <span class="exp">리뷰 이벤트</span>
+            </li>
+            <li class="icon6">
+                <a href=""><img src="./imgs/icon_superprice_06.svg" alt="기획전 상품"></a>
+                <span class="exp">기획전 상품</span>
+            </li>
+        </ul>
+    </div>
+    
+</section>
+<!-- end : 막강한 회원전용혜택 -->
+
+
+
+
+
+
+
+
+<!-- 상품 목록 섹션 -->
+<h2 class="tit_m">
+    <span>이달의 베스트상품</span>
+</h2>
+
+
+<section class="main_in">
+
+   <div class="main_content">
+      <div class="main_new">
+        <div class="main_prd_list">
+
+        <ul class="goods_product_list">
+
+            <li class="goods_prd_item2">
+                <div class="goods_prd_item2_box">
+                    <div class="goods_prd_img">
+                        <div class="img_box">
+                            <a href="" target="_self">
+                                <div class="img">
+                                    <img src="./imgs/img_thismonth_01.jpg" width="320" alt="상품이미지" title="상품" class="middle">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_prd_content">
+                        <div class="goods_list_info">
+                            <a href="" target="_self">
+                            <div class="goods_prd_icon"></div>
+                                <ul class="goods_info_list">
+                                    <li class="prd_name"><span>세타필 베이비 젠틀 워시 데일리세트</span></li>
+                                    <li class="short_des">민감한 내 아이를 위한 최고의 맞춤데일리케어 솔루션</li>
+                                    <li class="price">
+                                        <span class="c_price">
+                                            <em>29,000</em>
+                                            <span class="add_currency"></span>
+                                        </span>
+                                        <strong class="item_dc">35%</strong>
+                                    </li>
+                                    <li class="fixed_price">
+                                        <em>35,000</em>
+                                        <span class="add_currency"></span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+    
+    
+    
+            <li class="goods_prd_item2">
+                <div class="goods_prd_item2_box">
+                    <div class="goods_prd_img">
+                        <div class="img_box">
+                            <a href="" target="_self">
+                                <div class="img">
+                                    <img src="./imgs/img_thismonth_02.jpg" width="320" alt="상품이미지" title="상품" class="middle">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_prd_content">
+                        <div class="goods_list_info">
+                            <a href="" target="_self">
+                            <div class="goods_prd_icon"></div>
+                                <ul class="goods_info_list">
+                                    <li class="prd_name"><span>유기농 섬유소재로 만든 쪽쪽이</span></li>
+                                    <li class="short_des">민감한 내 아이를 위한 최고의 맞춤데일리케어 솔루션</li>
+                                    <li class="price">
+                                        <span class="c_price">
+                                            <em>18,000</em>
+                                            <span class="add_currency"></span>
+                                        </span>
+                                        <strong class="item_dc">27%</strong>
+                                    </li>
+                                    <li class="fixed_price">
+                                        <em>22,000</em>
+                                        <span class="add_currency"></span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+    
+    
+    
+    
+            <li class="goods_prd_item2">
+                <div class="goods_prd_item2_box">
+                    <div class="goods_prd_img">
+                        <div class="img_box">
+                            <a href="" target="_self">
+                                <div class="img">
+                                    <img src="./imgs/img_thismonth_03.jpg" width="320" alt="상품이미지" title="상품" class="middle">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_prd_content">
+                        <div class="goods_list_info">
+                            <a href="" target="_self">
+                            <div class="goods_prd_icon"></div>
+                                <ul class="goods_info_list">
+                                    <li class="prd_name"><span>엄마와 아이가 함께쓰는 인견 타월세트</span></li>
+                                    <li class="short_des">민감한 내 아이를 위한 최고의 맞춤데일리케어 솔루션</li>
+                                    <li class="price">
+                                        <span class="c_price">
+                                            <em>12,500</em>
+                                            <span class="add_currency"></span>
+                                        </span>
+                                        <strong class="item_dc">42%</strong>
+                                    </li>
+                                    <li class="fixed_price">
+                                        <em>17,000</em>
+                                        <span class="add_currency"></span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+    
+    
+    
+            <li class="goods_prd_item2">
+                <div class="goods_prd_item2_box">
+                    <div class="goods_prd_img">
+                        <div class="img_box">
+                            <a href="" target="_self">
+                                <div class="img">
+                                    <img src="./imgs/img_thismonth_04.jpg" width="320" alt="상품이미지" title="상품" class="middle">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_prd_content">
+                        <div class="goods_list_info">
+                            <a href="" target="_self">
+                            <div class="goods_prd_icon"></div>
+                                <ul class="goods_info_list">
+                                    <li class="prd_name"><span>세타필 베이비 젠틀 워시 데일리세트</span></li>
+                                    <li class="short_des">민감한 내 아이를 위한 최고의 맞춤데일리케어 솔루션</li>
+                                    <li class="price">
+                                        <span class="c_price">
+                                            <em>29,000</em>
+                                            <span class="add_currency"></span>
+                                        </span>
+                                        <strong class="item_dc">12%</strong>
+                                    </li>
+                                    <li class="fixed_price">
+                                        <em>35,000</em>
+                                        <span class="add_currency"></span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+    
+        </ul>
+
+
+      </div>
+ </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- start : 유튜브 -->
+<section class="main_youtube">
+    
+    <div class="text_area">
+        <h2 class="effect">베이비 데일리 선크림</h2>
+        <p>부모와 아이가 모두 사용하는 저자극 선크림</p>
+        <button><a href="">바로구매하기</a></button>
+    </div>
+
+    
+    <!-- 유튜브영상 -->
+    <div class="main_youtube_banner">
+        <iframe src="https://www.youtube.com/embed/RfnV9A7yAeA?si=eyUa9foAUIlIxxxJ&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=RfnV9A7yAeA" class="videoframe" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="y" width="100%" height="320px" frameborder="0"></iframe>
+    </div>
+</section>
+<!-- end : 유튜브 -->
+
+
+
+
+
+
+
+
+<!-- 상품 목록 섹션 -->
+<h2 class="tit_m">
+    <span>새로운상품</span>
+</h2>
+
+
+<section class="main_in">
+
+   <div class="main_content">
+      <div class="main_new">
+        <div class="main_prd_list">
+
+        <ul class="goods_product_list">
+
+            <li class="goods_prd_item2">
+                <div class="goods_prd_item2_box">
+                    <div class="goods_prd_img">
+                        <div class="img_box">
+                            <a href="" target="_self">
+                                <div class="img">
+                                    <img src="./imgs/img_thismonth_01.jpg" width="320" alt="상품이미지" title="상품" class="middle">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_prd_content">
+                        <div class="goods_list_info">
+                            <a href="" target="_self">
+                            <div class="goods_prd_icon"></div>
+                                <ul class="goods_info_list">
+                                    <li class="prd_name"><span>세타필 베이비 젠틀 워시 데일리세트</span></li>
+                                    <li class="short_des">민감한 내 아이를 위한 최고의 맞춤데일리케어 솔루션</li>
+                                    <li class="price">
+                                        <span class="c_price">
+                                            <em>29,000</em>
+                                            <span class="add_currency"></span>
+                                        </span>
+                                        <strong class="item_dc">35%</strong>
+                                    </li>
+                                    <li class="fixed_price">
+                                        <em>35,000</em>
+                                        <span class="add_currency"></span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+    
+    
+    
+            <li class="goods_prd_item2">
+                <div class="goods_prd_item2_box">
+                    <div class="goods_prd_img">
+                        <div class="img_box">
+                            <a href="" target="_self">
+                                <div class="img">
+                                    <img src="./imgs/img_thismonth_02.jpg" width="320" alt="상품이미지" title="상품" class="middle">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_prd_content">
+                        <div class="goods_list_info">
+                            <a href="" target="_self">
+                            <div class="goods_prd_icon"></div>
+                                <ul class="goods_info_list">
+                                    <li class="prd_name"><span>유기농 섬유소재로 만든 쪽쪽이</span></li>
+                                    <li class="short_des">민감한 내 아이를 위한 최고의 맞춤데일리케어 솔루션</li>
+                                    <li class="price">
+                                        <span class="c_price">
+                                            <em>18,000</em>
+                                            <span class="add_currency"></span>
+                                        </span>
+                                        <strong class="item_dc">27%</strong>
+                                    </li>
+                                    <li class="fixed_price">
+                                        <em>22,000</em>
+                                        <span class="add_currency"></span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+    
+    
+    
+    
+            <li class="goods_prd_item2">
+                <div class="goods_prd_item2_box">
+                    <div class="goods_prd_img">
+                        <div class="img_box">
+                            <a href="" target="_self">
+                                <div class="img">
+                                    <img src="./imgs/img_thismonth_03.jpg" width="320" alt="상품이미지" title="상품" class="middle">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_prd_content">
+                        <div class="goods_list_info">
+                            <a href="" target="_self">
+                            <div class="goods_prd_icon"></div>
+                                <ul class="goods_info_list">
+                                    <li class="prd_name"><span>엄마와 아이가 함께쓰는 인견 타월세트</span></li>
+                                    <li class="short_des">민감한 내 아이를 위한 최고의 맞춤데일리케어 솔루션</li>
+                                    <li class="price">
+                                        <span class="c_price">
+                                            <em>12,500</em>
+                                            <span class="add_currency"></span>
+                                        </span>
+                                        <strong class="item_dc">42%</strong>
+                                    </li>
+                                    <li class="fixed_price">
+                                        <em>17,000</em>
+                                        <span class="add_currency"></span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+    
+    
+    
+            <li class="goods_prd_item2">
+                <div class="goods_prd_item2_box">
+                    <div class="goods_prd_img">
+                        <div class="img_box">
+                            <a href="" target="_self">
+                                <div class="img">
+                                    <img src="./imgs/img_thismonth_04.jpg" width="320" alt="상품이미지" title="상품" class="middle">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_prd_content">
+                        <div class="goods_list_info">
+                            <a href="" target="_self">
+                            <div class="goods_prd_icon"></div>
+                                <ul class="goods_info_list">
+                                    <li class="prd_name"><span>세타필 베이비 젠틀 워시 데일리세트</span></li>
+                                    <li class="short_des">민감한 내 아이를 위한 최고의 맞춤데일리케어 솔루션</li>
+                                    <li class="price">
+                                        <span class="c_price">
+                                            <em>29,000</em>
+                                            <span class="add_currency"></span>
+                                        </span>
+                                        <strong class="item_dc">12%</strong>
+                                    </li>
+                                    <li class="fixed_price">
+                                        <em>35,000</em>
+                                        <span class="add_currency"></span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+    
+        </ul>
+
+
+      </div>
+ </div>
+</div>
+
+</section>
+
+
+
+
+    
+
+
+
+<!-- start : 슬라이드(이벤트) -->
+<h2 class="tit_m">
+    <span>이벤트</span>
+</h2>
+ <section class="event">
+  <!-- Swiper -->
+  <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+    <div class="swiper-wrapper" id="swiper-wrapper-e98b1ce19d951c86" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-10360px, 0px, 0px); transition-delay: 0ms;">
+      <div class="swiper-slide" role="group" aria-label="1 / 9" style="width: 2560px; margin-right: 30px;">
+            <img src="./imgs/slide_center_01.jpg" alt="슬라이드(이벤트)-1">        
+      </div>
+      <div class="swiper-slide" role="group" aria-label="2 / 9" style="width: 2560px; margin-right: 30px;">
+            <img src="./imgs/slide_center_02.jpg" alt="슬라이드(이벤트)-2">        
+      </div>
+      <div class="swiper-slide" role="group" aria-label="3 / 9" style="width: 2560px; margin-right: 30px;">
+            <img src="./imgs/slide_center_03.jpg" alt="슬라이드(이벤트)-3"> 
+      </div>
+       <div class="swiper-slide" role="group" aria-label="3 / 9" style="width: 2560px; margin-right: 30px;">
+            <img src="./imgs/slide_center_04.jpg" alt="슬라이드(이벤트)-3"> 
+      </div>
+      <div class="swiper-slide" role="group" aria-label="3 / 9" style="width: 2560px; margin-right: 30px;">
+            <img src="./imgs/slide_center_05.jpg" alt="슬라이드(이벤트)-3"> 
+      </div>
+<!-- <div class="swiper-slide swiper-slide-prev" role="group" aria-label="4 / 9" style="width: 2560px; margin-right: 30px;">Slide 4</div>
+      <div class="swiper-slide swiper-slide-active" role="group" aria-label="5 / 9" style="width: 2560px; margin-right: 30px;">Slide 5</div>
+      <div class="swiper-slide swiper-slide-next" role="group" aria-label="6 / 9" style="width: 2560px; margin-right: 30px;">Slide 6</div>
+      <div class="swiper-slide" role="group" aria-label="7 / 9" style="width: 2560px; margin-right: 30px;">Slide 7</div>
+      <div class="swiper-slide" role="group" aria-label="8 / 9" style="width: 2560px; margin-right: 30px;">Slide 8</div>
+      <div class="swiper-slide" role="group" aria-label="9 / 9" style="width: 2560px; margin-right: 30px;">Slide 9</div> -->
+    </div>
+
+
+    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-e98b1ce19d951c86" aria-disabled="false"></div>
+    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-e98b1ce19d951c86" aria-disabled="false"></div>
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 5" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span></div>
+  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+</section>
+<!-- end : 슬라이드(이벤트) -->
+
+
+
+
+
+
+
+
+<!-- start : 초보엄빠 -->
+<h2 class="tit_m">
+    <span>초보 엄빠들을 위한 육아정보</span>
+</h2>
+<section class="careinfo">
+
+    <div class="tab-container">
+        <div class="tabs">
+            <div class="tab" data-index="0">
+                <span class="age">0세~2세</span>
+                <span>우리아이 건강정보</span>
+            </div>
+            <div class="tab" data-index="1">
+                <span class="age">3세~5세</span>
+                <span>천하무적 엄빠되기</span>
+            </div>
+            <div class="tab" data-index="2">
+                <span class="age">5세~8세</span>
+                <span>아이와 함께하는 취미생활</span>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="content" data-index="0">
+                <a href="">
+                    <img src="./imgs/slide_careinfo_contents_01.png" alt="컨텐츠-초보엄빠">
+                </a>
+            </div>
+            <div class="content" data-index="1">
+                <a href="">
+                    <img src="./imgs/slide_careinfo_contents_02.png" alt="컨텐츠-초보엄빠">
+                </a>
+            </div>
+            <div class="content" data-index="2">
+                <a href="">
+                    <img src="./imgs/slide_careinfo_contents_03.png" alt="컨텐츠-초보엄빠">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- end : 초보엄빠 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- start : 제품리뷰 -->
+<section class="review">
+    <h2 class="tit">
+        <span>제품리뷰</span>
+    </h2>
+    
+    <div class="slider-container-zzz">
+        <div class="slider-wrapper">
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_01.jpg" alt="제품리뷰1" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">정말 좋은제품 입니다. 사길 잘했어요.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_02.jpg" alt="제품리뷰2" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">제품이 너무 좋습니다. 만족합니다.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                       <!--  <img src="./imgs/star-icon.svg" alt="5점"> -->
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_03.jpg" alt="제품리뷰3" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">정말 좋은제품 입니다. 사길 잘했어요.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                    </li>
+                </ul>
+            </div>
+            </div>  
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_04.jpg" alt="제품리뷰4" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">제품이 너무 좋습니다. 만족합니다.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                       <!--  <img src="./imgs/star-icon.svg" alt="5점"> -->
+                        <!-- <img src="./imgs/star-icon.svg" alt="5점"> -->
+                    </li>
+                </ul>
+            </div>
+            </div>  
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_05.jpg" alt="제품리뷰5" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">정말 좋은제품 입니다. 사길 잘했어요.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                    </li>
+                </ul>
+            </div>
+            </div>  
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_06.jpg" alt="제품리뷰6" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">정말 좋은제품 입니다. 사길 잘했어요.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                    </li>
+                </ul>
+            </div>
+            </div>  
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_01.jpg" alt="제품리뷰7" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">제품이 너무 좋습니다. 만족합니다.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <!-- <img src="./imgs/star-icon.svg" alt="5점"> -->
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                    </li>
+                </ul>
+            </div>
+            </div>  
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_02.jpg" alt="제품리뷰8" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">정말 좋은제품 입니다. 사길 잘했어요.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <!-- <img src="./imgs/star-icon.svg" alt="5점"> -->
+                        <!-- <img src="./imgs/star-icon.svg" alt="5점"> -->
+                    </li>
+                </ul>
+            </div>
+            </div>  
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_03.jpg" alt="제품리뷰9" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">제품이 너무 좋습니다. 만족합니다.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                    </li>
+                </ul>
+            </div>
+            </div>  
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_04.jpg" alt="제품리뷰10" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">정말 좋은제품 입니다. 사길 잘했어요.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <!-- <img src="./imgs/star-icon.svg" alt="5점"> -->
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                    </li>
+                </ul>
+            </div>
+            </div>  
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_05.jpg" alt="제품리뷰11" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">제품이 너무 좋습니다. 만족합니다.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                    </li>
+                </ul>
+            </div>
+            </div>  
+
+            <div class="slider-item">
+            <div class="detail-area">
+                <a href=""><img src="./imgs/img_review_06.jpg" alt="제품리뷰12" class="thumb"></a>
+                <ul class="info">
+                    <li class="name"><a href="">정말 좋은제품 입니다. 사길 잘했어요.</a></li>
+                    <li class="exp"><a href="">앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. 앞으로 계속 이 제품만 사게 될거같네요. 제품이 정말 너무 좋습니다. 사길 잘했어요. </a></li>
+                    <li class="point">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                        <!-- <img src="./imgs/star-icon.svg" alt="5점"> -->
+                        <img src="./imgs/star-icon.svg" alt="5점">
+                    </li>
+                </ul>
+            </div>
+            </div>  
+
+        </div>
+
+        <button class="slider-nav-button left" aria-label="Previous slide">&lt;</button>
+        <button class="slider-nav-button right" aria-label="Next slide">&gt;</button>
+
+        <div class="progress-bar-container-zzz">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+ </section>
+<!-- end : 제품리뷰 -->
+
+
+
+
+
+
+
+
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+        </div>
+        <div class="footer-info">
+            <p>상호명: (주)회사명 | 대표: 홍길동</p>
+            <p>사업자등록번호: 123-45-67890</p>
+            <p>주소: 서울특별시 강남구 테헤란로 123</p>
+            <p>전화: 02-1234-5678 | 이메일: info@company.com</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- PC 웹사이트 접속 링크 -->
+    <div class="pc-version-link">
+        <a href="#" id="pcVersionLink">PC 웹사이트로 보기</a>
+    </div>
+
+   
+
+
+    
+
+
+<!-- 스크립트(공통) -->
+<script src="./js/common_dbh_m.js"></script>
+
+<!-- 스크립트 (메인페이지) -->
+<script src="./js/main_dbh_m.js"></script>
+
+<script src="./js/mobile_tab_a1.js"></script>
+<script src="./js/mobile_tab_a2.js"></script>
+
+<!-- <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script> -->
+<script type="text/javascript" src="./js/jssor.slider.min.js"></script>
+
+
+</body>
+</html>
